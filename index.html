@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+<!-- need to complete SEO data-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>VDU Tool</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+</head>
+
+<body style="background: #d3d6da;">
+    <nav class="navbar navbar-expand-md bg-body">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><strong>VDU File Search</strong></a>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav"></ul>
+            </div>
+        </div>
+    </nav>
+    <section class="position-relative py-4 py-xl-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h1>Veteran's Discharge Upgrade File Search</h1><img class="img-fluid" width="1536" height="1024" src="assets/img/VDU%20-%20Background%20Image%20-%20No%20background.png" alt="image of soldier, HUMMMV, Naval Ship, Tank and Jet.">
+                    <p>Veterans pursuing discharge upgrades often face long delays, fragmented communication, and limited visibility into their case progress. While official portals and service-specific reading rooms provide access to decisions and submission logs, they’re not designed for easy tracking or personal documentation.<br><br>This tool streamlines the process. Simply enter your case number as provided by your board. The tool will scan the appropriate military reading room and return one of two results:<br><br><strong>File Not Found</strong> – Your case file has not yet been published.<br><strong>File Found</strong> – A direct link to the official .MIL site hosting your file.<br><br>Built to reduce friction and restore control, this tool helps veterans monitor their upgrade status with clarity and precision.</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <div class="card mb-5">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <form class="text-center" method="post">
+                                <div class="mb-3"><select class="form-select">
+                                    <!--Drop down selection for each branch of service as the branches have their own file sources and file naming conventions. Will ease backend configuration.-->
+                                        <optgroup label="Branch">
+                                            <option value="12">US Army</option>
+                                            <option value="13">US Marines</option>
+                                            <option value="14">US Navy</option>
+                                            <option value="">US Air Force</option>
+                                        </optgroup>
+                                    </select></div>
+                                <div>
+                                    <p>Case numbers vary by branch. Enter the full code as provided by your board.</p>
+                                </div>
+                                <!--Case numbers come in several structures but all contain letters, numbers and dates.-->
+                                <div class="mb-3"><input type="text" name="Case Number" placeholder="Case Number" minlength="6" maxlength="20"></div>
+                                <div class="mb-3"><button class="btn btn-primary w-100 d-block" type="submit">Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
